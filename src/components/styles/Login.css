@@ -1,0 +1,136 @@
+/* Estilos para el fondo */
+html, body {
+    background-image: url('https://www.freepik.es/vector-gratis/heladeria-japonesa-estilo-lineal_9925800.htm');
+    height: 100%;
+    margin: 0;
+  }
+  
+  /* Estilos para el contenedor principal */
+  #form1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 40px;
+    max-width: 300px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(177, 23, 216, 0.1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to right, #e38beb, #9337d1);
+  }
+  
+  /* Estilos para el texto de bienvenida */
+  #txtBienvenida {
+    color: #4a90e2;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  
+  /* Estilos para los títulos de los campos */
+  .txt {
+    color: #333;
+    margin: 10px 0 5px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  /* Estilos para las entradas de texto */
+  .entry {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ee84f1;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  .entry:focus {
+    border-color: #4a90e2;
+    outline: none;
+  }
+  
+  /* Estilos para el botón de enviar */
+  #btnEnviar {
+    padding: 10px;
+    width: 100%;
+    background-color: #c77fed;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  #btnEnviar:hover {
+    background-color: #b364db;
+  }
+  
+  /* Estilos para el botón de registro */
+  button {
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  /* Estilos para el enlace de restablecer contraseña */
+  #texto {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  #texto:hover {
+    text-decoration: underline;
+  }
+  
+  /* Estilos para mensajes de error */
+  .error {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  /* Responsivo: ajustes para pantallas más pequeñas */
+  @media (max-width: 600px) {
+    #form1 {
+        width: 90%;
+        padding: 15px;
+    }
+  
+    .txt {
+        font-size: 14px;
+    }
+  
+    .entry {
+        padding: 8px;
+        font-size: 14px;
+    }
+  
+    #btnEnviar, button {
+        padding: 8px;
+        font-size: 14px;
+    }
+  
+    #txtBienvenida {
+        font-size: 18px;
+    }
+  }
+  

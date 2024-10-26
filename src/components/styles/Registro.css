@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background: linear-gradient(to right, #d712e9, #e93397); /* Degradado de fondo */
+    font-family: Arial, sans-serif; /* Fuente de la página */
+}
+
+#dirRegistro {
+    max-width: 400px; /* Ancho máximo del contenedor */
+    width: 100%; /* Ancho completo */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra del cuadro */
+    background: linear-gradient(to right, #e56cf0, #f36cb6); /* Color de fondo blanco */
+}
+
+h3 {
+    text-align: center; /* Centrar el título */
+    color: #333; /* Color del texto del título */
+    margin-bottom: 20px; /* Margen inferior para el título */
+}
+
+.form-row {
+    display: flex; /* Usar flexbox para los elementos del formulario */
+    align-items: center; /* Alinear verticalmente al centro */
+    margin-bottom: 15px; /* Espacio entre las filas */
+}
+
+label {
+    flex: 1; /* Ocupa el espacio disponible */
+    color: #7b61d8; /* Color de las etiquetas */
+}
+
+.required {
+    color: red; /* Color rojo para el asterisco */
+    margin-left: 5px; /* Espacio entre el texto y el asterisco */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+    padding: 10px;
+    border: 1px solid #e458e4; /* Bordes de los campos */
+    border-radius: 5px; /* Bordes redondeados */
+    flex: 2; /* Ocupa más espacio en la fila */
+    transition: border-color 0.3s; /* Transición suave para el enfoque */
+}
+
+input:focus {
+    border-color: #e5fadf; /* Color de borde al enfocar */
+    outline: none; /* Sin borde al enfocar */
+}
+
+input[type="submit"],
+button {
+    padding: 10px;
+    background-color: #d712e9; /* Color de fondo del botón */
+    color: rgb(108, 72, 235); /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar */
+    transition: background-color 0.3s; /* Transición suave para el botón */
+    width: 80%; /* Botón ocupa el ancho completo */
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: #46d4c9; /* Color al pasar el mouse */
+}
+
+button {
+    margin-top: 10px; /* Margen superior para el botón Home */
+}
